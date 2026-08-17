@@ -11,12 +11,6 @@ class Solution {
     }
     public long power(long base,long exp){
         long result = 1;
-        if(exp == 0 || base == 1){
-            return 1;
-        }
-        if(exp == 1){
-            return base;
-        }
         while (exp > 0) {
             if (exp % 2 == 1) {
                 result = (result * base) % MOD;
