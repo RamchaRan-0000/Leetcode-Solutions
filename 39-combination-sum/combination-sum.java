@@ -4,7 +4,6 @@ class Solution {
         List<Integer> ds = new ArrayList<>();  // To store a current combination
         findCombination(0, target, candidates, ans, ds);  // Start the recursive search
         return ans;
-        
     }
     public void findCombination(int ind, int target, int[] arr, List<List<Integer>> ans, List<Integer> ds) {
         // Base case: if we have considered all elements in the array
@@ -15,14 +14,12 @@ class Solution {
             }
             return;
         }
-
         // Recursive case: pick the element if it's less than or equal to the target
         if (arr[ind] <= target) {
             ds.add(arr[ind]);  // Add the current element to the combination
             findCombination(ind, target - arr[ind], arr, ans, ds);  // Continue with the same index to allow repeated elements
             ds.remove(ds.size() - 1);  // Backtrack by removing the last added element
         }
-
         // Skip the current element and move to the next index
         findCombination(ind + 1, target, arr, ans, ds);
     }
