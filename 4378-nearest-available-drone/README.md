@@ -2,11 +2,9 @@
 
 <p>You are also given an integer array <code>target = [tx, ty]</code>, representing the coordinates of the target.</p>
 
-<p>A drone <code>drones[i]</code> can reach the target if the <strong>Manhattan distance</strong> between its coordinates and the target coordinates is <strong>less than or equal</strong> to its <code>range<sub>i</sub></code>.</p>
+<p>A drone <code>drones[i]</code> can reach the target if the <span data-keyword="manhattan-distance">Manhattan distance</span> between its coordinates and the target coordinates is <strong>less than or equal</strong> to its <code>range<sub>i</sub></code>.</p>
 
-<p>Return the <strong>index</strong> of the reachable drone with the <strong>minimum Manhattan distance</strong> to the target. If there is a tie, return the <strong>smallest index</strong>. If no drone can reach the target, return -1.</p>
-
-<p>The <strong>Manhattan distance</strong> between two coordinates <code>(x<sub>i</sub>, y<sub>i</sub>)</code> and <code>(x<sub>j</sub>, y<sub>j</sub>)</code> is <code>|x<sub>i</sub> - x<sub>j</sub>| + |y<sub>i</sub> - y<sub>j</sub>|</code>.</p>
+<p>Return the <strong>index</strong> of the reachable drone with the <strong>minimum Manhattan distance</strong> to the target. If there is a tie, return the <strong>smallest index</strong>. If no drone can reach the target, return <code>-1</code>.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
