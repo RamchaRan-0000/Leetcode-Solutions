@@ -3,7 +3,7 @@ class Solution {
         List<List<Integer>> ans = new ArrayList<>();
         List<Integer> ds = new ArrayList<>();
         findCombinations(0,target,candidates,ds,ans);
-        return ans;      
+        return ans;  
     }
     public void findCombinations(int ind,int target,int candidates[],List<Integer> ds,List<List<Integer>> ans){
         if (target == 0) {
