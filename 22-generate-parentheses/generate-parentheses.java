@@ -1,7 +1,7 @@
 class Solution {
     public void backtrack(String curr, int open, int close, int n, List<String> res) {
         if (curr.length() == 2 * n) {
-            res.add(curr);
+            res.add(curr);      
             return;
         }
         if (open < n) backtrack(curr + "(", open + 1, close, n, res);
