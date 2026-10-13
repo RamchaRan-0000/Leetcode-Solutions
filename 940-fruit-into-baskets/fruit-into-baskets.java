@@ -8,7 +8,7 @@ class Solution {
         int maxLength = 0;
         while(r<n){
             h.put(fruits[r],h.getOrDefault(fruits[r], 0) + 1);
-            while(h.size()>2){
+            if(h.size()>2){ // use if for (optimal)//
                if(h.get(fruits[l]) == 1) {
                     h.remove(fruits[l]);
                 }
@@ -17,8 +17,9 @@ class Solution {
                 }
                 l++;
             }
-            maxLength = Math.max(maxLength,r-l+1);
-            r++;
+            //maxLength = Math.max(maxLength,r-l+1);//
+            maxLength = Math.max(maxLength, r - l + 1);
+            r++;     
         }
         return maxLength;
         
